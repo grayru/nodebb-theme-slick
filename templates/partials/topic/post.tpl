@@ -48,13 +48,13 @@
 	<div class="col-sm-10 col-md-10 col-lg-10 post-content" component="post/content">
 		{posts.content}
 	</div>
-	<!-- IF posts.user.signature -->
+
 	<div class="col-sm-10 col-md-10 col-lg-10">
 		<div class="post-signature" component="post/signature" data-uid="{posts.user.uid}">
 			{posts.user.signature}
 		</div>
 	</div>
-	<!-- ENDIF posts.user.signature -->
+
 </div>
 <div class="row post-footer">
 	<div class="col-xs-12">
