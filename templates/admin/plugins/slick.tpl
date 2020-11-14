@@ -12,6 +12,7 @@
 			<div class="form-group">
 				<label for="skinOption">Select a skin</label>
 				<select id="skinOption" name="skinOption" class="form-control">
+					<option value="grey">Grey</option>
 					<option value="default">Default</option>
 					<option value="dark">Dark</option>
 				</select>
