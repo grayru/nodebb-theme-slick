@@ -1285,3 +1285,43 @@ body {
         }
     }
 }
+
+//Grey skin
+body {
+    &.theme-grey {
+    background: #dfdfdf;
+
+    blockquote {background: #fff;}
+
+    .topic [component=post] {background: #f5f5f5; padding-left: 15px; padding-right: 15px; box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2); border-radius: 3px;}
+    .topic .post .post-author {border: none;}
+    .topic .post .author {word-break: break-word;}
+
+    .composer {background: #f5f5f5;}
+
+    .categories .row {background: #f5f5f5;}
+    .categories .row:nth-child(2n+1) {background: #eaeaea; box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.1);}
+
+    .category .topics-header {margin-bottom: 0px; background: #eaeaea; box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.1);}
+    .category [component="category/topic"] {background: #f5f5f5;}
+    .category [component="category/topic"]:nth-child(2n) {background: #eaeaea; box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.1);}
+
+    .account {background: #f5f5f5; padding-left: 15px; padding-right: 15px;}
+
+    /* Только 1 форма белая. Нужно проверить остальные */
+    textarea.form-control {background: #fff; border-radius: 3px;}
+
+
+    /* Для 768 и больше - прижимаю подпись, уменьшаю место для аватара */
+    @media screen and (min-width: 768px) {
+    .topic .post .post-author {width: 150px;}
+    .topic .post .post-content {width: auto; float: none; margin-left: 150px;}
+    .post-sign {margin-left: 150px; float: none; width: auto;}
+    .topic .post .post-signature {margin: 5px 0px 20px 0px;}
+
+    /* Правлю отступы кнопок сверху. Есть глюки
+    .popular .breadcrumb, .recent .breadcrumb, .unread .breadcrumb, .container .btn-toolbar, #content > .breadcrumb {margin-left: -15px; margin-right: -15px;}
+    */
+    }
+    }
+}
